@@ -1,0 +1,13 @@
+Flask==1.0.1
+boto3
+flask_restful
+Werkzeug
+wsgiref
+redis
+rq
+flask_cors
+Pillow
+requests
+websocket-client
+python-dotenv
+validators
