@@ -105,7 +105,7 @@ PORT :: 8080
 
 e.g ws://localhost:8080/
 
-#### Pre-requisites
+#### Prerequisites
 installed node and npm
 
 #### Install dependencies
@@ -126,9 +126,9 @@ node socket-server.js or nodejs socket-server.js
 
 Check https://github.com/PradeepJaiswar/open-table-exercise-frontend
 
-## TODO
+## Test 
 
-Test cases
+TODO
 
 ## Code 
 
