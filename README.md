@@ -14,7 +14,7 @@ Upload service uploads the original image to AWS S3 bucket and returns the messa
 
 ## Service components
 
-## REST API
+### REST API
 
 #### Pre-requisites
 installed python and pip
@@ -74,7 +74,7 @@ WEB_SOCKET_PATH = ''; # websocket server path
 ```
 
 
-## Redis Server 
+### Redis Server 
 
 #### Install dependencies
 
@@ -85,7 +85,7 @@ install redis https://redis.io/topics/quickstart
 redis-server
 ```
 
-## Queue and Worker
+### Queue and Worker
 RQ (Redis Queue) :: A simple Python library for queueing jobs and processing them in the background with workers. 
 
 #### Install dependencies
@@ -100,7 +100,7 @@ Worker file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/
 cd open-table-exercise-backend
 rq worker
 ```
-## WebSocket
+### WebSocket
 PORT :: 8080
 e.g ws://localhost:8080/
 
@@ -121,5 +121,12 @@ cd open-table-exercise-backend
 node socket-server.js or nodejs socket-server.js
 ```
 
+## Web applicatio
+
+Check https://github.com/PradeepJaiswar/open-table-exercise-frontend
+
+# TODO
+
+Test case 
 
 
