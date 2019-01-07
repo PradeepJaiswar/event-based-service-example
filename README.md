@@ -7,7 +7,7 @@ For demo visit http://13.126.151.86/
 
 ## How it works?
 
-Upload service uploads the original image to AWS S3 bucket and returns the message saying that image is uploaded and sent for resizing. At the same time upload service adds a job in Redis queue that new image is ready for resizing. Image resize worker which is listening for the new job from Redis, picks up the job and does the resizing of original image and uploads back to AWS S3 in a separate folder. After the worker is done with resizing and uploading it also sends a message to a web socket server that new image is being resized in the system. On receiving the message from web worker web socket server tell all subscribed client that new resized image is added in the system and update UI
+Upload service uploads the original image to AWS S3 bucket and returns the message saying that image is uploaded and sent for resizing. At the same time upload service adds a job in Redis queue that new image is ready for resizing. Image resize worker which is listening for the new job from Redis, picks up the job and does the resizing of original image and uploads back to AWS S3 in a separate folder. After the worker is done with resizing and uploading it also sends a message to a web socket server that new image is being resized in the system. On receiving the message from web worker web socket server tell all subscribed client that new resized image is added in the system, update your UI
 
 ## Architecture Diagram
 [![architecture-diagram](https://raw.githubusercontent.com/PradeepJaiswar/open-table-exercise-backend/master/architecture-diagram.png)]
