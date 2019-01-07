@@ -100,7 +100,26 @@ Worker file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/
 cd open-table-exercise-backend
 rq worker
 ```
+## WebSocket
+PORT :: 8080
+e.g ws://localhost:8080/
 
+#### Pre-requisites
+installed node and npm
+
+#### Install dependencies
+```
+cd open-table-exercise-backend
+npm install ws
+```
+Websocket server file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/blob/master/socket-server.js
+
+#### Run websocket server
+
+```
+cd open-table-exercise-backend
+node socket-server.js or nodejs socket-server.js
+```
 
 
 
