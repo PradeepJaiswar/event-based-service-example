@@ -75,19 +75,26 @@ WEB_SOCKET_PATH = ''; # websocket server path
 
 
 ## Redis Server 
+
+#### Install dependencies
+
 install redis https://redis.io/topics/quickstart
 
-Start the redis server
+#### Run redis server
 ```
 redis-server
 ```
 
 ## Queue and Worker
-RQ (Redis Queue) :: A simple Python library for queueing jobs and processing them in the background with workers. Already include in the project requirements.txt file
+RQ (Redis Queue) :: A simple Python library for queueing jobs and processing them in the background with workers. 
+
+#### Install dependencies
+
+Already include in the project requirements.txt file
 
 Worker file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/blob/master/worker.py
 
-start rq worker
+#### Run rq worker
 
 ```
 cd open-table-exercise-backend
