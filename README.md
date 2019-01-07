@@ -126,8 +126,16 @@ node socket-server.js or nodejs socket-server.js
 
 Check https://github.com/PradeepJaiswar/open-table-exercise-frontend
 
-# TODO
+## TODO
 
 Test cases
+
+## Code 
+
+APi's are written Flaskframewoek http://flask.pocoo.org/ using blueprints http://flask.pocoo.org/docs/1.0/blueprints/ for modular code structure
+
+
+
+
 
 
