@@ -18,8 +18,8 @@ class UploadResource(Resource):
         file = request.files['file']
         if file and allowedFile(file.filename):
             try:
-                fileName = secure_filename(file.filename)
-                fileExtension = fileName.rpartition('.')[-1]
+                fileName = secure_filename(file.filename).lower()
+                fileExtension = fileName.rpartition('.')[-1].lower()
                 file.save(os.path.join(TMP_FILE_PATH, fileName))
                 
                 # send the file to AWS S3 bucket  
@@ -38,7 +38,8 @@ class UploadResource(Resource):
                 # send to redis queue to pick by resize worker
                 redisQueue = Queue(connection=Redis())
                 redisQueue.enqueue(ResizeImage, s3FileUrl)  
-            except:
+            except Exception as e:
+                print(e);
                 return {
                     'data': 'something went wrong',
                 },400 

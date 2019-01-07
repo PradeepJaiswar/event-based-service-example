@@ -12,8 +12,7 @@ $ pip install -r requirements.txt
 
 ```
 $ python run.py
-* Running on http://localhost:5000/ (Press CTRL+C to quit)
-* Restarting with stat
+* Running on http://localhost:7000/ (Press CTRL+C to quit)
 ```
 
 #### API

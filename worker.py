@@ -12,9 +12,9 @@ from helpers import allowedFile, TMP_FILE_PATH, S3_BASE_URL, S3_BUCKET_NAME, WEB
 def ResizeImage(url):
     if validators.url(url):
         # download the image from url and save for resizing
-        fileName = url.split('/')[-1]
+        fileName = url.split('/')[-1].lower()
         if allowedFile(fileName):
-            fileExtension = fileName.rpartition('.')[-1]
+            fileExtension = fileName.rpartition('.')[-1].lower()
             S3fileExtension =  'jpeg' if fileExtension == 'jpg' else fileExtension
             downloadedFilePath = TMP_FILE_PATH + '/' + fileName;
             file = requests.get(url, allow_redirects=True)
