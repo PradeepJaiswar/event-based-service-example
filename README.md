@@ -102,6 +102,7 @@ rq worker
 ```
 ### WebSocket
 PORT :: 8080
+
 e.g ws://localhost:8080/
 
 #### Pre-requisites
@@ -121,12 +122,12 @@ cd open-table-exercise-backend
 node socket-server.js or nodejs socket-server.js
 ```
 
-## Web applicatio
+## Web applicatios
 
 Check https://github.com/PradeepJaiswar/open-table-exercise-frontend
 
 # TODO
 
-Test case 
+Test cases
 
 
