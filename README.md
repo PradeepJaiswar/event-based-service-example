@@ -1,4 +1,4 @@
-# Cvent based service example
+# Event based service example
 
 ### Event based services for uploading images to AWS S3 bucket. Resizing uploaded images to thumbnail, uploading them into separate S3 bucket folder and listing down the resized images.
 
