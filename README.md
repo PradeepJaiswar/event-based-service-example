@@ -10,7 +10,7 @@ For demo visit http://13.126.151.86/
 Upload service uploads the original image to AWS S3 bucket and returns the message saying that image is uploaded and sent for resizing. At the same time upload service adds a job in Redis queue that new image is ready for resizing. Image resize worker which is listening for the new job from Redis, picks up the job and does the resizing of original image and uploads back to AWS S3 in a separate folder. After the worker is done with resizing and uploading it also sends a message to a web socket server that new image is being resized in the system. On receiving the message from web worker web socket server tell all subscribed client that new resized image is added in the system, update your UI
 
 ## Architecture Diagram
-![architecture-diagram](https://raw.githubusercontent.com/PradeepJaiswar/open-table-exercise-backend/master/architecture-diagram.png)
+![architecture-diagram](https://raw.githubusercontent.com/PradeepJaiswar/event-based-service-example/master/architecture-diagram.png)
 
 ## Service components
 
@@ -92,12 +92,12 @@ RQ (Redis Queue) :: A simple Python library for queueing jobs and processing the
 
 Already include in the project requirements.txt file
 
-Worker file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/blob/master/worker.py
+Worker file is at https://github.com/PradeepJaiswar/event-based-service-example/blob/master/worker.py
 
 #### Run rq worker
 
 ```
-cd open-table-exercise-backend
+cd event-based-service-example
 rq worker
 ```
 ### WebSocket
@@ -110,15 +110,15 @@ installed node and npm
 
 #### Install dependencies
 ```
-cd open-table-exercise-backend
+cd event-based-service-example
 npm install ws
 ```
-Websocket server file is at https://github.com/PradeepJaiswar/open-table-exercise-backend/blob/master/socket-server.js
+Websocket server file is at https://github.com/PradeepJaiswar/event-based-service-example/blob/master/socket-server.js
 
 #### Run websocket server
 
 ```
-cd open-table-exercise-backend
+cd event-based-service-example
 node socket-server.js or nodejs socket-server.js
 ```
 
