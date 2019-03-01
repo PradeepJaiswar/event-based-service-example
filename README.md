@@ -121,7 +121,7 @@ node socket-server.js or nodejs socket-server.js
 
 ## Web applicatios
 
-Check https://github.com/PradeepJaiswar/open-table-exercise-frontend
+Check https://github.com/PradeepJaiswar/event-based-service-example-frontend
 
 ## Test 
 
